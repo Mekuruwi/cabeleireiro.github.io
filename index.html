@@ -1,425 +1,528 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estúdio Rodrigues - Salão de beleza especializado em cabelo, unhas e estética. Transformação capilar e cuidado com sua autoestima.">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
-
-    <title>Estúdio Rodrigues</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Estúdio Rodrigues | Cabelo, Unhas & Estética</title>
 </head>
 <body>
-    <main class="Julia">
-  <header class="menu-topo">
-      <div class="logo">
-        <img src="imagens/logo1.png" alt="Logo da Empresa">
-      </div>
+    <!-- Header Fixo -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#inicio" class="logo">
+                <img src="imagens/logo1.png" alt="Estúdio Rodrigues">
+            </a>
+            
+            <nav class="nav-main" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">História</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#servicos" class="nav-link dropdown-toggle">Serviços <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#cabelo">Cabelo</a></li>
+                            <li><a href="#unhas">Unhas</a></li>
+                            <li><a href="#estetica">Estética</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#espaco" class="nav-link">Espaço</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
 
-      <nav class="menu-links">
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#historia">História</a></li>
+            <div class="header-social">
+                <a href="https://www.instagram.com/estudiorodriigues" target="_blank" rel="noopener" aria-label="Instagram">
+                    <img src="imagens/instagram.png" alt="">
+                </a>
+                <a href="https://www.facebook.com/share/19QzkfDwBC/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+                    <img src="imagens/facebook.png" alt="">
+                </a>
+                <a href="https://www.tiktok.com/@estudiorodriigues?_t=ZM-8wTZP9nWIT8&_r=1" target="_blank" rel="noopener" aria-label="TikTok">
+                    <img src="imagens/tik-tok.png" alt="">
+                </a>
+            </div>
 
-      <li class="submenu">
-        <a href="#">Serviços</a>
-        <div class="submenu-linha">
-          <a href="#cabelo">Cabelo</a>
-          <a href="#unhas">Unhas</a>
-          <a href="#estetica">Estética</a>
+            <button class="mobile-menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </li>
-
-          <li><a href="#espaço">Espaço</a></li>
-          <li><a href="#diferencial">Diferencial</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-
-  <div class="redes-sociais">
-  <a href="https://www.instagram.com/estudiorodriigues" target="_blank" rel="noopener">
-    <img src="imagens/instagram.png" alt="Instagram">
-    </a>
-    <a href="https://www.facebook.com/share/19QzkfDwBC/?mibextid=wwXIfr" target="_blank" rel="noopener">
-      <img src="imagens/facebook.png" alt="Facebook">
-    </a>
-    <a href="https://www.tiktok.com/@estudiorodriigues?_t=ZM-8wTZP9nWIT8&_r=1" target="_blank" rel="noopener">
-      <img src="imagens/tik-tok.png" alt="TikTok">
-    </a>
-  </div>
-
     </header>
 
-    <main>
-  <section class="carrossel">
-
-    <div class="slides">
-      <img src="imagens/capa1.jpg" alt="Imagem 1">
-    </div>
-
-
-    </main>
-    </main>
-
-    <main class="rafa">
-    <section id="inicio" class="secao valores coladas">
-      <div class="valor">
-        <span class="titulo">Missão</span>
-        <span class="descricao">Satisfazer as expectativas de cada cliente, entregando sempre o melhor resultado.</span>
-      </div>
-      <div class="valor">
-        <span class="titulo">Visão</span>
-        <span class="descricao">Ser referência em transformação capilar e na realização de sonhos.</span>
-      </div>
-      <div class="valor">
-        <span class="titulo">Valores</span>
-        <span class="descricao">Empatia, amor e compromisso com cada cliente.</span>
-      </div>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('imagens/capa1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('imagens/capa11.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('imagens/capa2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('imagens/capa33.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('imagens/capa4.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-subtitle">Mais que um salão,</span>
+                <span class="hero-headline">uma experiência de transformação</span>
+            </h1>
+            <p class="hero-description">Onde cada fio conta uma história e cada cliente é uma obra de arte única.</p>
+            <a href="https://wa.me/5511987540265" class="btn btn-primary btn-hero" target="_blank" rel="noopener">
+                Agendar Horário
+            </a>
+        </div>
+        <div class="hero-nav">
+            <button class="hero-nav-btn prev" aria-label="Slide anterior">‹</button>
+            <div class="hero-dots">
+                <span class="hero-dot active" data-index="0"></span>
+                <span class="hero-dot" data-index="1"></span>
+                <span class="hero-dot" data-index="2"></span>
+                <span class="hero-dot" data-index="3"></span>
+                <span class="hero-dot" data-index="4"></span>
+            </div>
+            <button class="hero-nav-btn next" aria-label="Próximo slide">›</button>
+        </div>
     </section>
 
-    <div class="frase">
-        Entender minha visão como profissional e cabeleireiro foi fundamental para o crescimento do Estúdio Rodrigues.
-    </div>
-  </main>
-
-    <main class="dri">
-    <section class="Sobre">
-    <div class="containerdri animar">
-      <h2>Sobre o Estúdio Rodrigues</h2>
-          </div>
-</section>
-<section id="historia" class="section light">
-    <div class="containerdri">
-      <button class="toggle-btn animar">O Inicio</button>
-    <div class="content">
-         <p>Desde cedo, sonhava em trabalhar com cabelo. 
-        Deus me honrou com esse talento e sou grato todos os dias por viver do que amo fazer. 
-        Comecei atendendo em casa, de madrugada, realizando apenas químicas como botox, selagem e progressiva, além de cortar pontinhas. 
-        Na época, atendia somente familiares e amigos mais próximos. </p>
-        <p>Mesmo já sabendo mexer com cabelo, eu não tinha técnica. 
-        Foi então que decidi fazer um curso profissionalizante. 
-        Depois disso, me senti mais confiante e iniciei meu trabalho em um salão com minha prima. 
-        Foi nesse período que aprendi a lidar com pessoas, a me valorizar como profissional e a me posicionar diante de clientes abusivos.</p>
-        <p>No dia 05 de outubro de 2020, fundei o Estúdio Rodrigues. 
-        Sempre sonhei em ter meu próprio negócio. 
-        O salão nasceu como uma promessa de Deus: um espaço que me daria liberdade de horário, a chance de trabalhar ao lado da minha esposa e de viver o sonho de empreender em família.</p>
-    </div>
-    </div>
-  <section id="historia" class="section light">
-    <div class="containerdri">
-      <button class="toggle-btn animar">Desafios do início</button>
-    <div class="content">
-        <p>A primeira sede do salão foi na sala da casa da minha irmã, onde eu morava de favor. 
-        Algumas clientes do salão onde eu trabalhava foram atrás de mim, além de amigos e familiares. 
-        Assim, comecei com uma clientela já formada, eu e minha esposa demos o primeiro passo juntos, no nosso primeiro curso. 
-        E, com muita dedicação, fomos crescendo e conquistando tudo aos poucos.</p>
-        <p>O começo não foi fácil. Enfrentei a falta de confiança em mim mesmo e o medo de dar o primeiro passo. Havia muita pressão para entregar resultados, pois cada cliente vinha com grandes expectativas. 
-        Precisei aprender a me manter atualizado com as tendências, gerenciar o tempo com as clientes, lidar com suas expectativas e organizar o salão. 
-        Tudo era novo, e cada etapa foi um aprendizado.</p>
-    </div>
-    </div>
-  </section>
-  <section id="crescimento" class="section light">
-    <div class="containerdri">
-        <button class="toggle-btn animar">Crescimento</button>
-      <div class="content">
-        <p>O Estúdio Rodrigues já passou por seis locais diferentes. 
-        Sempre buscamos oferecer um espaço maior e mais adequado para nossos clientes, com uma equipe cada vez mais capacitada. 
-        Hoje, temos um ambiente preparado, com visão e valores bem definidos que refletem nossa trajetória.</p>
-    </div>
-    </div>
-  </section>
-  <section id="serviços" class="section light">
-    <div class="containerdri">
-      <button class="toggle-btn animar">Serviços Favoritos e Carro-Chefe</button>
-    <div class="content">
-        <p>Tenho um carinho especial por transformações em cabelos afro — é o que mais amo fazer. 
-        Nosso carro-chefe no Estúdio Rodrigues é o corte e a colorimetria, serviços que entregam mudanças marcantes e elevam a autoestima de quem passa por nossas cadeiras.</p>
-    </div>
-    </div>
-  </section>
-  <section id="Sonhos" class="section light">
-    <div class="containerdri">
-      <button class="toggle-btn animar">Sonhos para o Futuro</button>
-      <div class="content">
-        <p>Nosso maior sonho é expandir o Estúdio Rodrigues e ter mais de uma unidade. 
-        O nome sempre foi o mesmo, e carrega uma história de fé, superação, amor e transformação.</p>
-    </div>
-    </div>
-  </section>
-  <section class="galeria">
-    <div class="containerdri">
-       <div class="slider">
-        <div class="slide-containerdri">
-          <img src="img.historia/foto1.jpeg" class="slide active" alt="Foto 1">
-          <img src="img.historia/foto2.jpeg" class="slide" alt="Foto 2">
-          <img src="img.historia/foto3.jpeg" class="slide" alt="Foto 3">
-          <img src="img.historia/foto4.jpeg" class="slide" alt="Foto 4">
-          <img src="img.historia/foto5.jpeg" class="slide" alt="Foto 5">
-          <img src="img.historia/foto6.jpeg" class="slide" alt="Foto 6">
-          <img src="img.historia/foto7.jpeg" class="slide" alt="Foto 7">
-          <img src="img.historia/foto8.jpeg" class="slide" alt="Foto 8">
-          <img src="img.historia/foto9.jpeg" class="slide" alt="Foto 9">
-          <img src="img.historia/foto10.jpeg" class="slide" alt="Foto 10">
-          <img src="img.historia/foto11.jpeg" class="slide" alt="Foto 11">
-          <img src="img.historia/foto12.jpeg" class="slide" alt="Foto 12"> 
-          </div>
-         </div> 
-        <div class="dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span><!-- Adicione mais dots conforme as imagens -->
+    <!-- Missão, Visão e Valores -->
+    <section class="section-valores" id="valores">
+        <div class="container">
+            <div class="valor-card">
+                <div class="valor-icon">✦</div>
+                <h3 class="valor-titulo">Missão</h3>
+                <p class="valor-descricao">Satisfazer as expectativas de cada cliente, entregando sempre o melhor resultado.</p>
+            </div>
+            <div class="valor-card">
+                <div class="valor-icon">★</div>
+                <h3 class="valor-titulo">Visão</h3>
+                <p class="valor-descricao">Ser referência em transformação capilar e na realização de sonhos.</p>
+            </div>
+            <div class="valor-card">
+                <div class="valor-icon">♥</div>
+                <h3 class="valor-titulo">Valores</h3>
+                <p class="valor-descricao">Empatia, amor e compromisso com cada cliente.</p>
+            </div>
         </div>
-      </div>
-    </div>
-   
-  </section>  
-    </main>
-    <main class="kev">
-  </section>  
-  <div id ="cabelo" class="titulo">
-        <h1>cabelo</h1>
-        <p>Onde o fio começa, nasce também a força de quem o carrega.</p>
-    </div>
-    <section class="container carousel" id="carousel1">
-        <button class="prev">&#10094;</button>
-        <div class="cards-wrapper">
+        <div class="frase-destaque">
+            <p>"Entender minha visão como profissional e cabeleireiro foi fundamental para o crescimento do Estúdio Rodrigues."</p>
+        </div>
+    </section>
+
+    <!-- Sobre / História -->
+    <section class="section-sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-header animar-fade">
+                <span class="section-tag">Nossa Trajetória</span>
+                <h2 class="section-title">Sobre o Estúdio Rodrigues</h2>
+            </div>
             
-            <div class="card">
-                <img src="imagens/trançasvariadas.jpg" alt="Tranças variadas" style="width: 100%; height: auto;">
-                <h1>Tranças variadas: </h1>
-                <p>Estilos lindos e práticos que protegem o cabelo e duram dias.</p>
+            <div class="timeline">
+                <div class="timeline-item animar-fade">
+                    <div class="timeline-marker">01</div>
+                    <div class="timeline-content">
+                        <h3>O Início</h3>
+                        <p>Desde cedo, sonhava em trabalhar com cabelo. Deus me honrou com esse talento e sou grato todos os dias por viver do que amo fazer. Comecei atendendo em casa, de madrugada, realizando apenas químicas como botox, selagem e progressiva, além de cortar pontinhas. Na época, atendia somente familiares e amigos mais próximos.</p>
+                        <p>Mesmo já sabendo mexer com cabelo, eu não tinha técnica. Foi então que decidi fazer um curso profissionalizante. Depois disso, me senti mais confiante e iniciei meu trabalho em um salão com minha prima. Foi nesse período que aprendi a lidar com pessoas, a me valorizar como profissional e a me posicionar diante de clientes abusivos.</p>
+                        <p>No dia 05 de outubro de 2020, fundei o Estúdio Rodrigues. Sempre sonhei em ter meu próprio negócio. O salão nasceu como uma promessa de Deus: um espaço que me daria liberdade de horário, a chance de trabalhar ao lado da minha esposa e de viver o sonho de empreender em família.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animar-fade">
+                    <div class="timeline-marker">02</div>
+                    <div class="timeline-content">
+                        <h3>Desafios do Início</h3>
+                        <p>A primeira sede do salão foi na sala da casa da minha irmã, onde eu morava de favor. Algumas clientes do salão onde eu trabalhava foram atrás de mim, além de amigos e familiares. Assim, comecei com uma clientela já formada, eu e minha esposa demos o primeiro passo juntos, no nosso primeiro curso. E, com muita dedicação, fomos crescendo e conquistando tudo aos poucos.</p>
+                        <p>O começo não foi fácil. Enfrentei a falta de confiança em mim mesmo e o medo de dar o primeiro passo. Havia muita pressão para entregar resultados, pois cada cliente vinha com grandes expectativas. Precisei aprender a me manter atualizado com as tendências, gerenciar o tempo com as clientes, lidar com suas expectativas e organizar o salão. Tudo era novo, e cada etapa foi um aprendizado.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animar-fade">
+                    <div class="timeline-marker">03</div>
+                    <div class="timeline-content">
+                        <h3>Crescimento</h3>
+                        <p>O Estúdio Rodrigues já passou por seis locais diferentes. Sempre buscamos oferecer um espaço maior e mais adequado para nossos clientes, com uma equipe cada vez mais capacitada. Hoje, temos um ambiente preparado, com visão e valores bem definidos que refletem nossa trajetória.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animar-fade">
+                    <div class="timeline-marker">04</div>
+                    <div class="timeline-content">
+                        <h3>Serviços Favoritos e Carro-Chefe</h3>
+                        <p>Tenho um carinho especial por transformações em cabelos afro — é o que mais amo fazer. Nosso carro-chefe no Estúdio Rodrigues é o corte e a colorimetria, serviços que entregam mudanças marcantes e elevam a autoestima de quem passa por nossas cadeiras.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item animar-fade">
+                    <div class="timeline-marker">05</div>
+                    <div class="timeline-content">
+                        <h3>Sonhos para o Futuro</h3>
+                        <p>Nosso maior sonho é expandir o Estúdio Rodrigues e ter mais de uma unidade. O nome sempre foi o mesmo, e carrega uma história de fé, superação, amor e transformação.</p>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="imagens/cortescapilar.jpg" alt="Cortes" style="width: 100%; height: auto;">
-                <h1>Cortes: </h1>
-                <p>Renova o visual e ajuda a manter os fios saudáveis.</p>
+
+            <!-- Galeria de Fotos da História -->
+            <div class="galeria-historia animar-fade">
+                <div class="galeria-grid">
+                    <img src="img.historia/foto1.jpeg" alt="Momento da história - Foto 1" loading="lazy">
+                    <img src="img.historia/foto2.jpeg" alt="Momento da história - Foto 2" loading="lazy">
+                    <img src="img.historia/foto3.jpeg" alt="Momento da história - Foto 3" loading="lazy">
+                    <img src="img.historia/foto4.jpeg" alt="Momento da história - Foto 4" loading="lazy">
+                    <img src="img.historia/foto5.jpeg" alt="Momento da história - Foto 5" loading="lazy">
+                    <img src="img.historia/foto6.jpeg" alt="Momento da história - Foto 6" loading="lazy">
+                    <img src="img.historia/foto7.jpeg" alt="Momento da história - Foto 7" loading="lazy">
+                    <img src="img.historia/foto8.jpeg" alt="Momento da história - Foto 8" loading="lazy">
+                    <img src="img.historia/foto9.jpeg" alt="Momento da história - Foto 9" loading="lazy">
+                    <img src="img.historia/foto10.jpeg" alt="Momento da história - Foto 10" loading="lazy">
+                    <img src="img.historia/foto11.jpeg" alt="Momento da história - Foto 11" loading="lazy">
+                    <img src="img.historia/foto12.jpeg" alt="Momento da história - Foto 12" loading="lazy">
+                </div>
             </div>
-            <div class="card">
-                <img src="imagens/higienizaçãocapilar.jpg" alt="Higienização" style="width: 100%; height: auto;">
-                <h1>Higienização</h1>
-                <p>Limpa profundamente o couro cabeludo, evitando oleosidade e caspa.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/escova.jpg" alt="Escova" style="width: 100%; height: auto;">
-                <h1>Escova: </h1>
-                <p>Alinha os fios, dá brilho e facilita o dia a dia.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/testehidratação.jpg" alt="Hidratação" style="width: 100%; height: auto;">
-                <h1>Hidratação: </h1>
-                <p>Devolve a água que o cabelo perde com o tempo. Ideal para fios ressecados.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/teste2finalização.jpg" alt="Finalização" style="width: 100%; height: auto;">
-                <h1>Finalização:</h1>
-                <p>Define os fios e controla o frizz, deixando o cabelo com um ótimo acabamento.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/reconstruçãocapilar2.jpg" alt="Nutrição" style="width: 100%; height: auto;">
-                <h1>Nutrição:</h1>
-                <p>Reforça os fios com óleos e vitaminas, ótimo para pontas secas.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/nutriçãocapilar2.jpg" alt="Reconstrução" style="width: 100%; height: auto;">
-                <h1>Reconstrução: </h1>
-                <p>Repõe a queratina e fortalece cabelos danificados por química.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/liso.jpg" alt="Progressiva" style="width: 100%; height: auto;">
-                <h1>Progressiva: </h1>
-                <p>Alisa e reduz o volume por mais tempo</p>
-            </div>
-            <div class="card">
-                <img src="imagens/nutriçãocapilar.jpg" alt="Selagem" style="width: 100%; height: auto;">
-                <h1>Selagem: </h1>
-                <p>Sela as cutículas dos fios, diminuindo o frizz e dando brilho.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/selagem.jpg" alt="Botox" style="width: 100%; height: auto;">
-                <h1>Botox: </h1>
-                <p>Trata e alinha os fios, deixando-os macios e menos volumosos.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/cortesfemininos.jpg" alt="Gel selante" style="width: 100%; height: auto;">
-                <h1>Gel selante:</h1>
-                <p> Alisa temporariamente e trata os fios ao mesmo tempo.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/mechas.jpg" alt="Mechas" style="width: 100%; height: auto;">
-                <h1>Mechas:</h1>
-                <p>Iluminam o cabelo com estilo, realçando o rosto</p>
-            </div>
-            <div class="card">
-                <img src="imagens/penteadonoiva.jpg" alt="Penteados" style="width: 100%; height: auto;">
-                <h1>Penteados:</h1>
-                <p> Perfeitos para eventos, festas ou dias especiais</p>
-            </div>
-            <div class="card">
-                <img src="imagens/ozonioterapiacapilar.jpg" alt="Ozônio terapia" style="width: 100%; height: auto;">
-                <h1>Ozônio terapia:</h1>
-                <p>Estimula o crescimento e trata o couro cabeludo com oxigênio puro.</p>
-            </div>
-        </div>
-        
-        <button class="next">&#10095;</button>
-    </section>
-    
-    <div id="unhas" class="titulo">
-        <h1>Unhas</h1>
-        <p>Detalhes que não se dizem em voz alta, mas gritam elegância nas pontas dos dedos.</p>
-    </div>
-    <section class="container">
-        <div class="card">
-            <img src="imagens/unhasmãoepé.jpg" alt="Unhas fibra de vidro/gel" style="width: 100%; height: auto;">
-            <h1>Unhas Fibra e Gel: </h1></h1>
-            <p>Alongam e fortalecem as unhas, com durabilidade.</p>
-        </div>
-        <div class="card">
-            <img src="imagens/banhogel.jpg" alt="Banho de gel e blindagem" style="width: 100%; height: auto;">
-            <h1>Gel e Blindagem:</h1>
-            <p>Protege as unhas naturais e dá brilho.</p>
-        </div>
-        <div class="card">
-            <img src="imagens/spadospés.jpg" alt="Spa dos pés" style="width: 100%; height: auto;">
-            <h1>Spa dos pés:</h1>
-            <p>Relaxa, hidrata e cuida dos pés profundamente.</p>
         </div>
     </section>
-    <div id="estetica" class="titulo">
-        <h1>Estética</h1>
-        <p>Cuidar de si é um ato silencioso de amor — que transforma o espelho num altar.</p>
-    </div>
-    <section class="container carousel" id="carousel3">
-        <button class="prev">&#10094;</button>
-        <div class="cards-wrapper">
-            <div class="card">
-                <img src="imagens/drenagem.jpg" alt="Drenagem linfática" style="width: 100%; height: auto;">
-                <h1>Drenagem:</h1>
-                <p>Massagem que elimina toxinas e reduz inchaços.</p>
+
+    <!-- Serviços -->
+    <section class="section-servicos" id="servicos">
+        <div class="container">
+            <div class="servicos-header animar-fade">
+                <span class="section-tag">O Que Oferecemos</span>
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="servicos-tabs">
+                    <button class="tab-btn active" data-tab="cabelo">Cabelo</button>
+                    <button class="tab-btn" data-tab="unhas">Unhas</button>
+                    <button class="tab-btn" data-tab="estetica">Estética</button>
+                </div>
             </div>
-            <div class="card">
-                <img src="imagens/depilaçãonacera.jpg" alt="Depilação com linha e cera" style="width: 100%; height: auto;">
-                <h1>Depilação linha e cera:</h1>
-                <p>Remove os pelos pela raiz, deixando a pele lisa por mais tempo.</p>
+
+            <!-- Cabelo -->
+            <div class="servicos-content active" id="cabelo">
+                <div class="servicos-intro">
+                    <h3>Cabelo</h3>
+                    <p>Onde o fio começa, nasce também a força de quem o carrega.</p>
+                </div>
+                <div class="cards-carousel" id="carousel-cabelo">
+                    <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                    <div class="cards-wrapper">
+                        <div class="card-servico">
+                            <img src="imagens/trançasvariadas.jpg" alt="Tranças variadas" loading="lazy">
+                            <h4>Tranças Variadas</h4>
+                            <p>Estilos lindos e práticos que protegem o cabelo e duram dias.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/cortescapilar.jpg" alt="Cortes" loading="lazy">
+                            <h4>Cortes</h4>
+                            <p>Renova o visual e ajuda a manter os fios saudáveis.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/higienizaçãocapilar.jpg" alt="Higienização" loading="lazy">
+                            <h4>Higienização</h4>
+                            <p>Limpa profundamente o couro cabeludo, evitando oleosidade e caspa.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/escova.jpg" alt="Escova" loading="lazy">
+                            <h4>Escova</h4>
+                            <p>Alinha os fios, dá brilho e facilita o dia a dia.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/testehidratação.jpg" alt="Hidratação" loading="lazy">
+                            <h4>Hidratação</h4>
+                            <p>Devolve a água que o cabelo perde com o tempo. Ideal para fios ressecados.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/teste2finalização.jpg" alt="Finalização" loading="lazy">
+                            <h4>Finalização</h4>
+                            <p>Define os fios e controla o frizz, deixando o cabelo com um ótimo acabamento.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/reconstruçãocapilar2.jpg" alt="Nutrição" loading="lazy">
+                            <h4>Nutrição</h4>
+                            <p>Reforça os fios com óleos e vitaminas, ótimo para pontas secas.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/nutriçãocapilar2.jpg" alt="Reconstrução" loading="lazy">
+                            <h4>Reconstrução</h4>
+                            <p>Repõe a queratina e fortalece cabelos danificados por química.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/liso.jpg" alt="Progressiva" loading="lazy">
+                            <h4>Progressiva</h4>
+                            <p>Alisa e reduz o volume por mais tempo.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/nutriçãocapilar.jpg" alt="Selagem" loading="lazy">
+                            <h4>Selagem</h4>
+                            <p>Sela as cutículas dos fios, diminuindo o frizz e dando brilho.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/selagem.jpg" alt="Botox" loading="lazy">
+                            <h4>Botox</h4>
+                            <p>Trata e alinha os fios, deixando-os macios e menos volumosos.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/cortesfemininos.jpg" alt="Gel selante" loading="lazy">
+                            <h4>Gel Selante</h4>
+                            <p>Alisa temporariamente e trata os fios ao mesmo tempo.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/mechas.jpg" alt="Mechas" loading="lazy">
+                            <h4>Mechas</h4>
+                            <p>Iluminam o cabelo com estilo, realçando o rosto.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/penteadonoiva.jpg" alt="Penteados" loading="lazy">
+                            <h4>Penteados</h4>
+                            <p>Perfeitos para eventos, festas ou dias especiais.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/ozonioterapiacapilar.jpg" alt="Ozônio terapia" loading="lazy">
+                            <h4>Ozônio Terapia</h4>
+                            <p>Estimula o crescimento e trata o couro cabeludo com oxigênio puro.</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Próximo">›</button>
+                </div>
             </div>
-            <div class="card">
-                <img src="imagens/maquiagem.jpg" alt="Maquiagem" style="width: 100%; height: auto;">
-                <h1>Maquiagem:</h1>
-                <p>Realça sua beleza e valoriza seus traços.</p>
+
+            <!-- Unhas -->
+            <div class="servicos-content" id="unhas">
+                <div class="servicos-intro">
+                    <h3>Unhas</h3>
+                    <p>Detalhes que não se dizem em voz alta, mas gritam elegância nas pontas dos dedos.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card-servico">
+                        <img src="imagens/unhas.jpg" alt="Unhas fibra de vidro/gel" loading="lazy">
+                        <h4>Unhas Fibra e Gel</h4>
+                        <p>Alongam e fortalecem as unhas, com durabilidade.</p>
+                    </div>
+                    <div class="card-servico">
+                        <img src="imagens/banhogel.jpg" alt="Banho de gel e blindagem" loading="lazy">
+                        <h4>Gel e Blindagem</h4>
+                        <p>Protege as unhas naturais e dá brilho.</p>
+                    </div>
+                    <div class="card-servico">
+                        <img src="imagens/spadospés.jpg" alt="Spa dos pés" loading="lazy">
+                        <h4>Spa dos Pés</h4>
+                        <p>Relaxa, hidrata e cuida dos pés profundamente.</p>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="imagens/sobrancelhas.jpg" alt="Designe de sobrancelhas" style="width: 100%; height: auto;">
-                <h1>Designe de sobrancelhas:</h1>
-                <p>Molda as sobrancelhas, destacando o olhar.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/henna.jpg" alt="Henna de sobrancelhas" style="width: 100%; height: auto;">
-                <h1>Henna:</h1>
-                <p>Preenche falhas e define o formato por alguns dias.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/limpezadepele.jpg" alt="Limpeza de pele" style="width: 100%; height: auto;">
-                <h1>Limpeza de pele:</h1>
-                <p>Remove impurezas e cravos, deixando a pele mais limpa e saudável.</p>
-            </div>
-            <div class="card">
-                <img src="imagens/cilios.jpg" alt="Cílios" style="width: 100%; height: auto;">
-                <h1>Cílios:</h1>
-                <p>Alongam e definem o olhar, com técnicas como extensão fio a fio.</p>
+
+            <!-- Estética -->
+            <div class="servicos-content" id="estetica">
+                <div class="servicos-intro">
+                    <h3>Estética</h3>
+                    <p>Cuidar de si é um ato silencioso de amor — que transforma o espelho num altar.</p>
+                </div>
+                <div class="cards-carousel" id="carousel-estetica">
+                    <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                    <div class="cards-wrapper">
+                        <div class="card-servico">
+                            <img src="imagens/drenagem.jpg" alt="Drenagem linfática" loading="lazy">
+                            <h4>Drenagem Linfática</h4>
+                            <p>Massagem que elimina toxinas e reduz inchaços.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/depilaçãonacera.jpg" alt="Depilação com linha e cera" loading="lazy">
+                            <h4>Depilação Linha e Cera</h4>
+                            <p>Remove os pelos pela raiz, deixando a pele lisa por mais tempo.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/maquiagem.jpg" alt="Maquiagem" loading="lazy">
+                            <h4>Maquiagem</h4>
+                            <p>Realça sua beleza e valoriza seus traços.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/sobrancelhas.jpg" alt="Design de sobrancelhas" loading="lazy">
+                            <h4>Design de Sobrancelhas</h4>
+                            <p>Molda as sobrancelhas, destacando o olhar.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/henna.jpg" alt="Henna de sobrancelhas" loading="lazy">
+                            <h4>Henna</h4>
+                            <p>Preenche falhas e define o formato por alguns dias.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/limpezadepele.jpg" alt="Limpeza de pele" loading="lazy">
+                            <h4>Limpeza de Pele</h4>
+                            <p>Remove impurezas e cravos, deixando a pele mais limpa e saudável.</p>
+                        </div>
+                        <div class="card-servico">
+                            <img src="imagens/cilios.jpg" alt="Cílios" loading="lazy">
+                            <h4>Cílios</h4>
+                            <p>Alongam e definem o olhar, com técnicas como extensão fio a fio.</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Próximo">›</button>
+                </div>
             </div>
         </div>
-        <button class="next">&#10095;</button>
     </section>
-    </main>
-    <main class="Mathes">
-      <!-- Espaço do Estúdio Rodrigues -->
-      <section id="espaço" class="video-section">
-          <h1>Explore o Espaço</h1>
-          <div class="video-container">
-              <video autoplay loop muted playsinline>
-                  <source src="imagens/espaco.mp4.mp4" type="video/mp4" />
-                  Seu navegador não suporta a exibição deste vídeo.
-              </video>
-          </div>
-      </section>
-    </main>
-    <main id="diferencial" class="Mathdi">
-        <main>
-            <!-- Diferenciais do Estúdio Rodrigues -->
-            <section class="diferenciais">
-                <h2>Diferenciais do Estúdio Rodrigues</h2>
-                <p>
-                    Nosso maior diferencial é a conexão verdadeira com cada cliente. 
-                    Acreditamos que mexer no cabelo é também mexer na autoestima — 
-                    e, automaticamente, no emocional. 
-                    Por isso, tratamos cada atendimento com responsabilidade.
-                </p>
 
-
-            <!-- Modal de Detalhes -->
-            <section id="event-details" class="hidden">
-            <button onclick="closeDetails()">Fechar</button>
-            <div id="details-content"></div>
-            </section>
-        </main>
-    </main>
-    <main class="rafa">
-    <div class="container">
-      <div class="texto">
-        <h1>Perfume capilar<br> 
-        <p>
-          Nosso perfume capilar foi desenvolvido pensando no cuidado diário com os fios. 
-          Ele contém silicone, que deixa o cabelo mais sedoso e macio. Além disso inibe odores, 
-          proporciona brilho, reduz o frizz e oferece uma sensação deliciosa de leveza e frescor.
-        </p>
-        <a class="botao" href="https://w.app/gnpl1f" target="_blank">Adquira o seu aqui</a>
-      </div>
-
-      <div class="foto">
-        <img src="imagens/perfume.png" alt="Perfume Capilar">
-      </div>
-    </div>
-  </main>
-    <main class="Julia">
-        <footer id="contato" class="rodape">
-    <div class="rodape-conteudo">
-
-        <!-- Lado esquerdo -->
-        <div class="rodape-esquerda">
-        <img src="imagens/logo1.png" alt="Logo da Empresa" class="logo-rodape">
-
-        <div class="redes-sociais">
-            <a href="https://www.instagram.com/estudiorodriigues"><img src="imagens/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/share/19QzkfDwBC/?mibextid=wwXIfr"><img src="imagens/facebook.png" alt="Facebook"></a>
-            <a href="https://www.tiktok.com/@estudiorodriigues?_t=ZM-8wTZP9nWIT8&_r=1"><img src="imagens/tik-tok.png" alt="TikTok"></a>
+    <!-- Espaço -->
+    <section class="section-espaco" id="espaco">
+        <div class="container">
+            <div class="espaco-header animar-fade">
+                <span class="section-tag">Nosso Ambiente</span>
+                <h2 class="section-title">Explore o Espaço</h2>
+            </div>
+            <div class="video-wrapper animar-fade">
+                <video autoplay loop muted playsinline poster="imagens/espaco1.jpg">
+                    <source src="imagens/espaco.mp4.mp4" type="video/mp4" />
+                    <p>Seu navegador não suporta a exibição deste vídeo.</p>
+                </video>
+            </div>
+            <div class="espaco-galeria animar-fade">
+                <img src="imagens/espaco1.jpg" alt="Espaço do salão - Vista 1" loading="lazy">
+                <img src="imagens/espaco2.jpg" alt="Espaço do salão - Vista 2" loading="lazy">
+                <img src="imagens/espaco3.jpg" alt="Espaço do salão - Vista 3" loading="lazy">
+                <img src="imagens/espaco4.jpg" alt="Espaço do salão - Vista 4" loading="lazy">
+            </div>
         </div>
-        </div>
-        <div class="info">
-            <h1>Contato</h1>
-            <p>🕒 Terça a Sexta: 10:00 AM às 18:30 PM<br>🕒 Sábado: 09:00 AM às 20:00 PM</p>
-            <p>📍Localização: Rua Álvaro Viana N° 12</p>
-            <p>📞 Telefone: (11) 98754-0265<br>
-              
-        </div>
-        <!-- Lado direito -->
-        <div class="rodape-direita">
-        <img src="imagens/logo2.png" alt="Logo Parceiro" class="logo-rodape-direita">
-        </div>
+    </section>
 
-    </div>
+    <!-- Diferenciais -->
+    <section class="section-diferenciais" id="diferenciais">
+        <div class="container">
+            <div class="diferenciais-content animar-fade">
+                <h2 class="section-title">Diferenciais do Estúdio Rodrigues</h2>
+                <p class="diferenciais-texto">Nosso maior diferencial é a conexão verdadeira com cada cliente. Acreditamos que mexer no cabelo é também mexer na autoestima — e, automaticamente, no emocional. Por isso, tratamos cada atendimento com responsabilidade.</p>
+                <div class="diferenciais-grid">
+                    <div class="diferencial-item">
+                        <span class="diferencial-numero">01</span>
+                        <h4>Atendimento Personalizado</h4>
+                        <p>Cada cliente é único e merece um cuidado especial.</p>
+                    </div>
+                    <div class="diferencial-item">
+                        <span class="diferencial-numero">02</span>
+                        <h4>Profissionais Qualificados</h4>
+                        <p>Equipe em constante atualização com as últimas tendências.</p>
+                    </div>
+                    <div class="diferencial-item">
+                        <span class="diferencial-numero">03</span>
+                        <h4>Ambiente Acolhedor</h4>
+                        <p>Espaço pensado para seu conforto e bem-estar.</p>
+                    </div>
+                    <div class="diferencial-item">
+                        <span class="diferencial-numero">04</span>
+                        <h4>Produtos de Qualidade</h4>
+                        <p>Utilizamos apenas produtos premium para melhores resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produto em Destaque -->
+    <section class="section-produto">
+        <div class="container">
+            <div class="produto-wrapper animar-fade">
+                <div class="produto-imagem">
+                    <img src="imagens/perfume.png" alt="Perfume Capilar Estúdio Rodrigues" loading="lazy">
+                </div>
+                <div class="produto-info">
+                    <span class="section-tag">Produto Exclusivo</span>
+                    <h2 class="section-title">Perfume Capilar</h2>
+                    <p class="produto-descricao">Nosso perfume capilar foi desenvolvido pensando no cuidado diário com os fios. Ele contém silicone, que deixa o cabelo mais sedoso e macio. Além disso inibe odores, proporciona brilho, reduz o frizz e oferece uma sensação deliciosa de leveza e frescor.</p>
+                    <ul class="produto-benefits">
+                        <li>✓ Deixa os fios sedosos e macios</li>
+                        <li>✓ Inibe odores desagradáveis</li>
+                        <li>✓ Proporciona brilho intenso</li>
+                        <li>✓ Reduz o frizz</li>
+                        <li>✓ Sensação de leveza e frescor</li>
+                    </ul>
+                    <a href="https://w.app/gnpl1f" class="btn btn-primary" target="_blank" rel="noopener">Adquira o Seu Aqui</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section-contato" id="contato">
+        <div class="container">
+            <div class="contato-wrapper animar-fade">
+                <div class="contato-info">
+                    <span class="section-tag">Fale Conosco</span>
+                    <h2 class="section-title">Contato</h2>
+                    <div class="contato-detalhes">
+                        <div class="contato-item">
+                            <span class="contato-icon">🕒</span>
+                            <div>
+                                <h4>Horário de Atendimento</h4>
+                                <p>Terça a Sexta: 10:00 às 18:30<br>Sábado: 09:00 às 20:00</p>
+                            </div>
+                        </div>
+                        <div class="contato-item">
+                            <span class="contato-icon">📍</span>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Rua Álvaro Viana, Nº 12</p>
+                            </div>
+                        </div>
+                        <div class="contato-item">
+                            <span class="contato-icon">📞</span>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(11) 98754-0265</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5511987540265" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.387 2.27 1.019 3.287l-.711 2.592 2.654-.698c1.029.575 1.949.944 3.237.944 3.182 0 5.768-2.587 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm6.763 8.253c-.276.775-1.588 1.478-2.216 1.569-.567.082-1.285.146-3.718-.825-1.562-.625-2.578-2.233-2.655-2.335-.075-.101-.629-.838-.629-1.595 0-.757.388-1.129.529-1.281.131-.141.281-.177.375-.177.094 0 .188.001.267.005.086.004.202-.033.316.24.117.281.398.977.433 1.048.035.071.059.153.008.254-.051.101-.076.163-.151.254-.075.091-.157.203-.225.273-.075.075-.153.157-.066.306.087.149.385.633.827 1.026.569.507 1.048.666 1.196.74.148.074.235.062.323-.039.088-.101.379-.443.481-.593.102-.15.204-.125.341-.073.137.052.868.409 1.015.482.147.074.245.111.28.172.035.061.035.355-.241 1.13z"/></svg>
+                        Agendar via WhatsApp
+                    </a>
+                </div>
+                <div class="contato-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.104762784854!2d-46.7041!3d-23.5628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzQ2LjEiUyA0NsKwNDInMTQuOCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Localização"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="imagens/logo1.png" alt="Estúdio Rodrigues" class="footer-logo">
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/estudiorodriigues" target="_blank" rel="noopener" aria-label="Instagram">
+                            <img src="imagens/instagram.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/share/19QzkfDwBC/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+                            <img src="imagens/facebook.png" alt="">
+                        </a>
+                        <a href="https://www.tiktok.com/@estudiorodriigues?_t=ZM-8wTZP9nWIT8&_r=1" target="_blank" rel="noopener" aria-label="TikTok">
+                            <img src="imagens/tik-tok.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <p>🕒 Terça a Sexta: 10:00 às 18:30<br>🕒 Sábado: 09:00 às 20:00</p>
+                    <p>📍 Rua Álvaro Viana, Nº 12</p>
+                    <p>📞 (11) 98754-0265</p>
+                </div>
+                <div class="footer-col">
+                    <img src="imagens/logo2.png" alt="Logo Parceiro" class="footer-logo-parceiro">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Estúdio Rodrigues. Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
-  </main>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5511987540265" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.387 2.27 1.019 3.287l-.711 2.592 2.654-.698c1.029.575 1.949.944 3.237.944 3.182 0 5.768-2.587 5.768-5.766.001-3.18-2.585-5.766-5.766-5.766zm6.763 8.253c-.276.775-1.588 1.478-2.216 1.569-.567.082-1.285.146-3.718-.825-1.562-.625-2.578-2.233-2.655-2.335-.075-.101-.629-.838-.629-1.595 0-.757.388-1.129.529-1.281.131-.141.281-.177.375-.177.094 0 .188.001.267.005.086.004.202-.033.316.24.117.281.398.977.433 1.048.035.071.059.153.008.254-.051.101-.076.163-.151.254-.075.091-.157.203-.225.273-.075.075-.153.157-.066.306.087.149.385.633.827 1.026.569.507 1.048.666 1.196.74.148.074.235.062.323-.039.088-.101.379-.443.481-.593.102-.15.204-.125.341-.073.137.052.868.409 1.015.482.147.074.245.111.28.172.035.061.035.355-.241 1.13z"/></svg>
+    </a>
+
     <script src="script.js"></script>
 </body>
 </html>
