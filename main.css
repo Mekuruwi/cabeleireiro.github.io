@@ -266,6 +266,12 @@ button {
     color: var(--cor-branco);
 }
 
+/* Navegação Principal */
+.nav-main {
+    display: flex;
+    align-items: center;
+}
+
 /* Header Social Icons */
 .header-social {
     display: flex;
@@ -1247,19 +1253,21 @@ button {
     .espaco-galeria {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@media (max-width: 768px) {
-    .nav-main {
-        display: none;
+    
+    .diferenciais-grid {
+        grid-template-columns: 1fr;
     }
     
-    .header-social {
-        display: none;
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 1.5rem;
+        right: 1.5rem;
     }
     
-    .mobile-menu-toggle {
-        display: flex;
+    .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
     }
     
     .hero-headline {
@@ -1313,22 +1321,6 @@ button {
     
     .espaco-galeria {
         grid-template-columns: 1fr;
-    }
-    
-    .diferenciais-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 1.5rem;
-        right: 1.5rem;
-    }
-    
-    .whatsapp-float svg {
-        width: 28px;
-        height: 28px;
     }
 }
 
