@@ -1621,3 +1621,26 @@ button {
         height: 40px;
     }
 }
+
+/* ========================================
+   PREVENT HORIZONTAL SCROLL - GLOBAL FIX
+   ======================================== */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img, video, iframe, svg {
+    max-width: 100%;
+    height: auto;
+}
